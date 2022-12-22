@@ -38,14 +38,15 @@ width:100%;
 .modal {
     display:none; /* Скрыто по умолчанию */
     position: fixed; /* Оставаться на месте */
-    left:1%;
-    bottom:1%;
-    right: 1%;
-    width: 98%; /* Полная ширина */
-    height: 98%; /* Полная высота */
-    background-color: rgb(0,0,0); /* Цвет запасной вариант  */
-    background-color: rgba(0,0,0,0.4); /*Черный с непрозрачностью */
-
+left:1%;
+bottom:0.1%;
+right:1%;
+    width: 99%; /* Полная ширина */
+    height: 99%; /* Полная высота */
+    background-color: black; /* Цвет запасной вариант  */
+    background-color: rgba(0,0,0,0.8); /*Черный с непрозрачностью */
+    backdrop-filter: blur(2px);
+    border-radius: 5%;
   }
   
   /* Модальное содержание */
@@ -156,8 +157,10 @@ width:100%;
   float: inline-start;
   position:center;
   width: 18%;
-  margin-left:1%;
+  margin-left:1.5%;
   margin-top: 1%;
+  border-style:inset;
+  border-color:grey;
 }
 
 /* Добавьте эффект прозрачности для миниатюрных изображений */

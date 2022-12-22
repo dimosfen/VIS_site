@@ -23,7 +23,12 @@ span.onclick=function(){
     body.style.background="#EFF0F1"
 
 }
-
+window.onclick = function() {
+    if (event.target == modal) {
+      modal.style.display = "none";
+      modal2.style.display = "none";
+    }
+  }
 span2.onclick=function(){
     modal2.style.display="none"
     body.style.background="#EFF0F1"
@@ -58,4 +63,5 @@ function show_modal_slide(n){
         body.style.background="#EFF0F1"
     }
     modal_slides_show[modal_slide-1].style.display="block";
+    body.style.background="black"
 }
