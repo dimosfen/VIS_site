@@ -4,9 +4,10 @@ body{
 
 }
 .slides img{
-  padding-left:25%;
-  width:940px;
-  height:940px;
+  padding-top:3%;
+  padding-left:30%;
+  width:45%;
+  height:45%;
 }
 
 a{
@@ -20,7 +21,7 @@ position:fixed;
 border-bottom-color:grey; 
 border-bottom-style:solid;
 border-bottom-width:2px;
-top:10;
+top:10px;
 width:100%;
 }
 #navbar li{
