@@ -1,0 +1,171 @@
+body{
+    background-color:#EFF0F1;
+    position:center;
+
+}
+.slides img{
+  padding-left:25%;
+  width:940px;
+  height:940px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+#navbar{
+    background-color: EFF0F1;
+overflow: hidden;
+position:fixed;
+border-bottom-color:grey; 
+border-bottom-style:solid;
+border-bottom-width:2px;
+top:10;
+width:100%;
+}
+#navbar li{
+    position:block;
+    float:left;
+    display:block;
+    text-align:center;
+    padding:14px 16px;
+    font-size:17px;
+    color:white;
+}
+#navbar li:hover{
+    color:grey;
+}
+.modal {
+    display:none; /* Скрыто по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    left:1%;
+    bottom:1%;
+    right: 1%;
+    width: 98%; /* Полная ширина */
+    height: 98%; /* Полная высота */
+    background-color: rgb(0,0,0); /* Цвет запасной вариант  */
+    background-color: rgba(0,0,0,0.4); /*Черный с непрозрачностью */
+
+  }
+  
+  /* Модальное содержание */
+  .modal-content {
+    margin-left:0.5%;
+    width: 90%;
+    
+  }
+  /* Добавить анимацию */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* Кнопка закрытия */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  .modal-body-info{
+    float:right;
+   
+  }
+  .modal img{
+    width:30%;
+    height:30%;
+    margin-left:10%;
+    margin-top:3%;
+  }
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+
+  .mySlides{
+    width:10%;
+    height:20%;
+    display:inline;
+    position:relative;
+  }
+  .container {
+    position: relative;
+  }
+  .prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* При наведении курсора мыши добавьте черный цвет фона с небольшим прозрачным слоем */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Контейнер для текста изображения */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+/* Шесть колонн бок о бок */
+.column  img{
+  float: inline-start;
+  position:center;
+  width: 18%;
+  margin-left:1%;
+  margin-top: 1%;
+}
+
+/* Добавьте эффект прозрачности для миниатюрных изображений */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
